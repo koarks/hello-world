@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Seller Platform</title>
+<link rel="stylesheet" href="seller.css">
+</head>
+
+<body>
+<header>
+	<center><h1>Sell a book!!</h1></center>
+</header>
+
+<section class = "half">
+<h2>Fill the form to sell your book</h2>
+<form action="seller.php" method="post">
+
+ <label>Book Name:</label><br/>
+ 	<input type="text" name ="Bnam"></input><br/>
+ <label>Author name:</label><br/>
+ 	<input type="text" name ="Anam"></input><br/>
+ <label>Price:</label><br/>
+ 	<input type="number" name ="Pric"></input><br/>
+ <label>Format:</label><br/>
+ 	<input type="text" name ="Frm"></input><br/>
+ <label>Copies:</label><br/>
+ 	<input type="number" name ="Copie"></input><br/>
+ <label>Category:</label><br/>
+ 	<input type="text" name ="Categor"></input><br/>
+ <label>Rating:</label><br/>
+ 	<input type="number" name ="Ratin" step="0.1"></input><br/>
+
+ <input type="submit" value="Submit"></input>
+ </form>
+ </section>
+
+<section class="half">
+	<h2>Modify the price of a book</h2>
+	<form action="seller.php" method="post">
+
+		<label>Book Name:</label><br/>
+		<input type="text" name="bkname"></input><br/>
+		<label>New Price:</label><br/>
+		<input type="number" name="newprice"></input><br/>
+		<input type="submit" value="Submit"></input><br/>
+		
+	</form>
+</section>
+
+ </body>
+ </html>

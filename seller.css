@@ -1,0 +1,22 @@
+/*div{
+	display:inline-block;
+	margin: 0 auto;
+	position:absolute;
+	width:100%;
+	display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+}*/
+ body
+{
+	/*background:#B3B3B3;*/
+	font-size:100%;
+	margin: 4%;
+}
+
+.half{
+	width: 45%;
+	display: inline-block;
+	float: left;
+	margin-right: 2%;
+}
