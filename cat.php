@@ -1,14 +1,21 @@
 <html>
 <body>
 <?php
-
+$host="http://mybookapplication.azurewebsites.net"
 $database='book1';
 $password="e924a34e";
 $username="b399ff00c924be";
 
-$con = mysql_connect('localhost',$username,$password) or die("Unable to log into database");
-@mysql_select_db($database,$con) or die("Unable to connect");
-
+//$con = mysql_connect('localhost',$username,$password) or die("Unable to log into database");
+//@mysql_select_db($database,$con) or die("Unable to connect");
+try {
+     $conn = new PDO( "mysql:host=$host;database=$db", $username, $password);
+      $conn->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
+       //PDOStatement::errorInfo();
+   }
+   catch(Exception $e){
+       die(var_dump($e));
+   }
 if(!empty($_POST['cat'])){
 	$inputcat = $_POST['cat'];
 	$query = "SELECT * FROM details WHERE Category='$inputcat'";
