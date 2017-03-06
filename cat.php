@@ -3,8 +3,8 @@
 <?php
 
 $database='book1';
-$password="";
-$username="root";
+$password="e924a34e";
+$username="b399ff00c924be";
 
 $con = mysql_connect('localhost',$username,$password) or die("Unable to log into database");
 @mysql_select_db($database,$con) or die("Unable to connect");
